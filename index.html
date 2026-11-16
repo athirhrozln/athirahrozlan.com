@@ -61,7 +61,7 @@
   .btn-dark:hover{background:#0B1220}
 
   /* filter bar */
-  .filter{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;background:var(--navy);border-radius:12px;padding:8px;margin:24px auto 36px;max-width:760px}
+  .filter{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;background:var(--navy);border-radius:12px;padding:8px;margin:24px auto 36px;max-width:900px}
   .filter button{font:inherit;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#A9B4C6;background:none;border:0;padding:10px 16px;border-radius:8px;cursor:pointer}
   .filter button:hover{color:#fff}
   @media(max-width:720px){.filter{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin-left:-8px;margin-right:-8px}.filter button{white-space:nowrap;flex:none;padding:9px 12px;font-size:12px}}
@@ -180,6 +180,7 @@
         <button class="on" data-f="all">All Projects</button>
         <button data-f="web">Web Development</button>
         <button data-f="data">Data Analytics</button>
+        <button data-f="de">Data Engineering</button>
         <button data-f="ds">Data Science</button>
       </div>
 
@@ -290,6 +291,17 @@
             <div class="made">(Made in React, personal project)</div>
             <p>A simple monthly budget planner with category breakdowns, a print view and PDF export.</p>
             <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">PDF export</span></div>
+          </div>
+        </article>
+
+        <!-- DE pipeline -->
+        <article class="proj soon prog" data-c="de data">
+          <div class="pbody">
+            <span class="status st-prog">In progress</span>
+            <h3>Aviation Events Data Pipeline</h3>
+            <div class="made">(Python, SQL & Power BI, 2026)</div>
+            <p>A medallion-style (Bronze → Silver → Gold) pipeline that ingests aviation event data from public APIs and files. It keeps only the latest version of each record, moves invalid records to a quarantine table with full traceability, and serves clean tables for Power BI. Designed to be idempotent, retry-safe and monitored.</p>
+            <div class="tags"><span class="tag">Data Engineering</span><span class="tag">Lakehouse</span><span class="tag">SQL</span><span class="tag">Data Quality</span></div>
           </div>
         </article>
 
